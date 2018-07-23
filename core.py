@@ -100,7 +100,7 @@ class Translation(object):
 
     def translate(self, text, target):
         if not self.__checkLang(target):
-            return [403, 'The target language is incorrect. For supported languages, please refer to http://35.194.97.99:81/support/languages ']
+            return [403, 'The target language is incorrect. ']
         try:
             self.__sendRequest(text, target)
         except Exception:
